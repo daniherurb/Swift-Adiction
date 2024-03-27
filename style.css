@@ -1,10 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap'); /* EB Garamond */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,200;1,8..144,200&display=swap');
+
+
 * {
     box-sizing: border-box;
 }
 
+.antic-slab-regular {
+    font-family: "Antic Slab", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
 body {
-    background-color: aquamarine;
+    align-items: center;
+    background-color: #edebe7;
 }
 
 footer {
@@ -25,55 +35,65 @@ header {
     display: flex; /* las cosas que tengas dentro tienen un tamaño flexible*/
 }
 
+
 .cuadroPrincipal {
     position: absolute;
     /*Esta posicionado por su cuenta, no toma en consideracion al resto de elementos*/
-    background-color: rgba(203, 203, 54, 0.915);
-    border: 5px solid black;
-    /* ancho tipo color */
-    border-radius: 40px;
+    background-color: #817c70;
+    box-shadow: 14px 13px 0px 2px rgba(0,0,0,0.61);
+    /* border: 5px solid #6b5b3a; ancho tipo color */
+    border-radius: 30px;
     /* redondear */
     padding: 2%;
     /* margen interno */
     max-width: 70vw;
     max-height: 90vh;
-    left: 15vw;
-    top: 5vh;
     overflow: hidden;
+    left: 15vw;
+    top: 10vh;
 }
 
 .albumTitle{
     text-align: center;
     margin-top: 4%;
-}
-
-#albumSeleccionado{
-    width: calc(80vw / 5);
-    margin:auto
+    font-family: "EB Garamond", "sans-serif";
+    color: #edebe7
 }
 
 .album{
     margin: 2%;
     margin-bottom: 0;
+    width: 100%;
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
+    transform: scale(1,1);
+    transition-timing-function: ease-out;
+    transition-duration: 250ms;
+}
+
+img:hover{
+    transform: scale(1.08,1.08);
+    transition-timing-function: ease-out;
+    transition-duration: 100ms;
 }
 
 #titulo {
     text-align: center;
     font-size: min(7vh, 7vw);
-    font-family: "Kalam";
+    font-family: "Roboto Serif", "sans-serif";
     margin:0%;
+    color: #edebe7;
 }
 
 #subtitulo {
     text-align: center;
-    font-size: min(3vh, 3vw);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: min(2vh, 2vw);
+    font-family: "Roboto Serif", sans-serif;
     margin: 0%;
-    margin-bottom: 1%;
+    margin-top: 1.2%;
+    color: #edebe7
 }
 
 @media only screen and (max-width: 600px) {
