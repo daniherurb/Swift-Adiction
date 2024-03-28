@@ -1,17 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap'); /* EB Garamond */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,200;1,8..144,200&display=swap');
+
+
 * {
     box-sizing: border-box;
 }
 
+body {
+    align-items: center;
+    background-color: #edebe7;
+}
 
-
-footer{
+footer {
     position: absolute;
+    font-family: "EB Garamon", sans-serif;
+    font-size: 15px;
     bottom: 0;
     width: 100vw;
     left: 0;
 }
 
-header{
+header {
     position: static;
     top: 0;
+}
+
+.contenedorCuadro {
+    width: 100%;
+    overflow: hidden;
+    display: flex; /* las cosas que tengas dentro tienen un tamaño flexible*/
+}
+
+
+.cuadroPrincipal {
+    position: absolute;
+    /*Esta posicionado por su cuenta, no toma en consideracion al resto de elementos*/
+    background-color: #817c70;
+    box-shadow: 14px 13px 0px 2px rgba(0,0,0,0.61);
+    /* border: 5px solid #6b5b3a; ancho tipo color */
+    border-radius: 30px;
+    /* redondear */
+    padding: 2%;
+    /* margen interno */
+    max-width: 70vw;
+    max-height: 90vh;
+    overflow: hidden;
+    left: 15vw;
+    top: 10vh;
+    bottom: 10vh;
+}
+
+.cuadroSecundario{
+    position: absolute;
+    /*Esta posicionado por su cuenta, no toma en consideracion al resto de elementos*/
+    background-color: #817c70;
+    box-shadow: 14px 13px 0px 2px rgba(0,0,0,0.61);
+    /* border: 5px solid #6b5b3a; ancho tipo color */
+    border-radius: 30px;
+    /* redondear */
+    padding: 3%;
+    /* margen interno */
+    display: flex; /* Los elementos se muestran de manera flexible*/
+    flex-direction: column; /* En una columna */
+    justify-content: center; /* Y centrados con respecto al elemento modificado*/
+    max-width: 70vw;
+    max-height: 90vh;
+    overflow: hidden;
+    left: 15vw;
+    top: 10vh;
+    bottom: 10vh;
+}
+
+.cuadroInfo {
+    display: flex;
+    align-items: center; /* esto hace que se centren el texto y la imagen */
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.cuadroInfo img{
+    width: 50vw;
+    height: 50vh;
+    max-width: 100%; /* La imagen no debe exceder el ancho del contenedor */
+}
+
+.cuadroInfo p{
+    margin-top: 0%;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    text-align: justify;
+}
+
+
+
+.albumTitle{
+    text-align: center;
+    margin-top: 4%;
+    font-family: "EB Garamond", "sans-serif";
+    color: #edebe7
+}
+
+.album{
+    margin: 2%;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.equis{
+    cursor: pointer;
+}
+
+#imagen{
+    width: 100%;
+    transform: scale(1,1);
+    transition-timing-function: ease-out;
+    transition-duration: 250ms;
+    cursor: pointer;
+}
+
+#imagen:hover{
+    transform: scale(1.08,1.08);
+    transition-timing-function: ease-out;
+    transition-duration: 100ms;
+}
+
+
+
+#titulo {
+    text-align: center;
+    font-size: min(7vh, 7vw);
+    font-family: "Roboto Serif", "sans-serif";
+    margin:0%;
+    color: #edebe7;
+}
+
+#subtitulo {
+    text-align: center;
+    font-size: min(2vh, 2vw);
+    font-family: "Roboto Serif", sans-serif;
+    margin: 0%;
+    margin-top: 1.2%;
+    color: #edebe7
+}
+
+@media only screen and (max-width: 600px) {
+    .cuadroPrincipal {
+        width: 90vw;
+        left: 5vw;
+    }
 }
