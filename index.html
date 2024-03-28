@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, ">
-    <title>Swift Adiction</title>
+    <title>Swiftify</title>
     <link href="style.css" rel="stylesheet"/>
     <script src="./script.js" defer></script>
 </head>
@@ -10,58 +10,361 @@
     
 
 
-<div class="cuadroPrincipal">
+<div class="cuadroPrincipal" id="cuadroPrincipal">
     <header>
-        <h1 id="titulo"> SWIFT ADICTION</h1>
+        <h1 id="titulo"> SWIFTIFY</h1>
     </header>
     <h2 id="subtitulo"><!--header-->
-        CHOOSE AN ALBUM
+        ¿Quieres empezar a escuchar a Taylor Swift y no sabes por donde empezar? Elige un album que te llame la atención:
     </h2>
     <div class="contenedorCuadro"><!--cuadro de los albumes-->
-        <div class="album">
-            <img src="https://i.scdn.co/image/ab67616d0000b273a48964b5d9a3d6968ae3e0de" alt="">
+        <div class="album" onclick="mostrarInfo('Fearless')">
+            <img id="imagen" src="https://i.scdn.co/image/ab67616d0000b273a48964b5d9a3d6968ae3e0de" alt="">
             <div class="albumTitle">Fearless</div> 
         </div>
-        <div class="album">
-            <img src="https://i.scdn.co/image/ab67616d0000b2730b04da4f224b51ff86e0a481" alt="">
+        <div class="album" onclick="mostrarInfo('SpeakNow')">
+            <img id="imagen" src="https://i.scdn.co/image/ab67616d0000b2730b04da4f224b51ff86e0a481" alt="">
             <div class="albumTitle">Speak Now</div> 
         </div>
-        <div class="album">
-            <img src="https://i.scdn.co/image/ab67616d0000b273318443aab3531a0558e79a4d" alt="">
+        <div class="album" onclick="mostrarInfo('Red')">
+            <img id="imagen" src="https://i.scdn.co/image/ab67616d0000b273318443aab3531a0558e79a4d" alt="">
             <div class="albumTitle">Red</div> 
         </div>
-        <div class="album">
-            <img src="https://i.scdn.co/image/ab67616d0000b273904445d70d04eb24d6bb79ac" alt="">
+        <div class="album" onclick="mostrarInfo('1989')">
+            <img id="imagen" src="https://i.scdn.co/image/ab67616d0000b273904445d70d04eb24d6bb79ac" alt="">
             <div class="albumTitle">1989</div> 
         </div>
-        <div class="album">
-            <img src="https://i.scdn.co/image/ab67616d0000b273da5d5aeeabacacc1263c0f4b" alt="">
+        <div class="album" onclick="mostrarInfo('Reputation')">
+            <img id="imagen" src="https://i.scdn.co/image/ab67616d0000b273da5d5aeeabacacc1263c0f4b" alt="">
             <div class="albumTitle">reputation</div> 
         </div>
     </div>
     <div class="contenedorCuadro"><!--cuadro de los albumes-->
-        <div class="album">
-            <img src="https://i.scdn.co/image/ab67616d0000b273e787cffec20aa2a396a61647" alt="">
+        <div class="album" onclick="mostrarInfo('Lover')">
+            <img id="imagen" src="https://i.scdn.co/image/ab67616d0000b273e787cffec20aa2a396a61647" alt="">
             <div class="albumTitle">Lover</div> 
         </div>
-        <div class="album">
-            <img src="https://i.scdn.co/image/ab67616d0000b27395f754318336a07e85ec59bc" alt="">
+        <div class="album" onclick="mostrarInfo('Folklore')">
+            <img id="imagen" src="https://i.scdn.co/image/ab67616d0000b27395f754318336a07e85ec59bc" alt="">
             <div class="albumTitle">folklore</div> 
         </div>
-        <div class="album">
-            <img src="https://i.scdn.co/image/ab67616d0000b27333b8541201f1ef38941024be" alt="">
+        <div class="album" onclick="mostrarInfo('Evermore')">
+            <img id="imagen" src="https://i.scdn.co/image/ab67616d0000b27333b8541201f1ef38941024be" alt="">
             <div class="albumTitle">evermore</div> 
         </div>
-        <div class="album">
-            <img src="https://i.scdn.co/image/ab67616d0000b273427ee2ecbd5e20c63e88c9d2" alt="">
+        <div class="album" onclick="mostrarInfo('Midnights')">
+            <img id="imagen" src="https://i.scdn.co/image/ab67616d0000b273427ee2ecbd5e20c63e88c9d2" alt="">
             <div class="albumTitle">Midnights</div> 
         </div>
-        <div class="album">
-            <img src="https://upload.wikimedia.org/wikipedia/en/6/6e/Taylor_Swift_%E2%80%93_The_Tortured_Poets_Department_%28album_cover%29.png" alt="">
+        <div class="album" onclick="mostrarInfo('TTPD')">
+            <img id="imagen" src="https://pbs.twimg.com/media/GFij0VvWQAALCNy?format=jpg&name=small" alt="">
             <div class="albumTitle">The Tortured <br>Poets Department</div> 
         </div>
     </div>
 </div>
+
+
+<div id="infoFearless" style="display:none;">
+    <div class="cuadroSecundario"> 
+        <header>
+            <h1> Fearless</h1>
+        </header>
+        <div class="cuadroInfo">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris ac justo vitae tortor interdum fermentum in in elit. 
+                Cras vel porta mi, eget porttitor magna. Sed hendrerit ornare viverra. 
+                Pellentesque accumsan, quam id egestas dictum, mauris arcu ultricies turpis, 
+                ac ornare odio justo volutpat velit. Cras lacus massa, accumsan sed risus at, 
+                faucibus lacinia leo. Suspendisse potenti. Vivamus massa felis, laoreet nec mauris a
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+
+                <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris ac justo vitae tortor interdum fermentum in in elit. 
+                Cras vel porta mi, eget porttitor magna. Sed hendrerit ornare viverra. 
+                Pellentesque accumsan, quam id egestas dictum, mauris arcu ultricies turpis, 
+                ac ornare odio justo volutpat velit. Cras lacus massa, accumsan sed risus at, 
+                faucibus lacinia leo. Suspendisse potenti. Vivamus massa felis, laoreet nec mauris a
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+
+            </p>
+            <img src="https://i.scdn.co/image/ab67616d0000b273a48964b5d9a3d6968ae3e0de" alt="">
+        </div>
+        <div class="equis" onclick="volver('Fearless')"> Volver </div>
+    </div>
+</div>
+
+<div id="infoSpeakNow" style="display:none;">
+    <div class="cuadroSecundario"> 
+        <header>
+            <h1> Speak Now </h1>
+        </header>
+        <div class="cuadroInfo">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris ac justo vitae tortor interdum fermentum in in elit. 
+                Cras vel porta mi, eget porttitor magna. Sed hendrerit ornare viverra. 
+                Pellentesque accumsan, quam id egestas dictum, mauris arcu ultricies turpis, 
+                ac ornare odio justo volutpat velit. Cras lacus massa, accumsan sed risus at, 
+                faucibus lacinia leo. Suspendisse potenti. Vivamus massa felis, laoreet nec mauris a
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+
+                <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris ac justo vitae tortor interdum fermentum in in elit. 
+                Cras vel porta mi, eget porttitor magna. Sed hendrerit ornare viverra. 
+                Pellentesque accumsan, quam id egestas dictum, mauris arcu ultricies turpis, 
+                ac ornare odio justo volutpat velit. Cras lacus massa, accumsan sed risus at, 
+                faucibus lacinia leo. Suspendisse potenti. Vivamus massa felis, laoreet nec mauris a
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+
+            </p>
+            <img src="https://i.scdn.co/image/ab67616d0000b2730b04da4f224b51ff86e0a481" alt="">
+        </div>
+        <div class="equis" onclick="volver('SpeakNow')"> Volver </div>
+    </div>
+</div>
+
+<div id="infoRed" style="display:none;">
+    <div class="cuadroSecundario"> 
+        <header>
+            <h1> Red </h1>
+        </header>
+        <div class="cuadroInfo">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris ac justo vitae tortor interdum fermentum in in elit. 
+                Cras vel porta mi, eget porttitor magna. Sed hendrerit ornare viverra. 
+                Pellentesque accumsan, quam id egestas dictum, mauris arcu ultricies turpis, 
+                ac ornare odio justo volutpat velit. Cras lacus massa, accumsan sed risus at, 
+                faucibus lacinia leo. Suspendisse potenti. Vivamus massa felis, laoreet nec mauris a
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+
+                <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris ac justo vitae tortor interdum fermentum in in elit. 
+                Cras vel porta mi, eget porttitor magna. Sed hendrerit ornare viverra. 
+                Pellentesque accumsan, quam id egestas dictum, mauris arcu ultricies turpis, 
+                ac ornare odio justo volutpat velit. Cras lacus massa, accumsan sed risus at, 
+                faucibus lacinia leo. Suspendisse potenti. Vivamus massa felis, laoreet nec mauris a
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+
+            </p>
+            <img src="https://i.scdn.co/image/ab67616d0000b273318443aab3531a0558e79a4d" alt="">
+        </div>
+        <div class="equis" onclick="volver('Red')"> Volver </div>
+    </div>
+</div>
+
+<div id="info1989" style="display:none;">
+    <div class="cuadroSecundario"> 
+        <header>
+            <h1> 1989 </h1>
+        </header>
+        <div class="cuadroInfo">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris ac justo vitae tortor interdum fermentum in in elit. 
+                Cras vel porta mi, eget porttitor magna. Sed hendrerit ornare viverra. 
+                Pellentesque accumsan, quam id egestas dictum, mauris arcu ultricies turpis, 
+                ac ornare odio justo volutpat velit. Cras lacus massa, accumsan sed risus at, 
+                faucibus lacinia leo. Suspendisse potenti. Vivamus massa felis, laoreet nec mauris a
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+
+                <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris ac justo vitae tortor interdum fermentum in in elit. 
+                Cras vel porta mi, eget porttitor magna. Sed hendrerit ornare viverra. 
+                Pellentesque accumsan, quam id egestas dictum, mauris arcu ultricies turpis, 
+                ac ornare odio justo volutpat velit. Cras lacus massa, accumsan sed risus at, 
+                faucibus lacinia leo. Suspendisse potenti. Vivamus massa felis, laoreet nec mauris a
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+
+            </p>
+            <img src="https://i.scdn.co/image/ab67616d0000b273904445d70d04eb24d6bb79ac" alt="">
+        </div>
+        <div class="equis" onclick="volver('1989')"> 
+            Volver 
+        </div>
+    </div>
+</div>
+
+<div id="infoReputation" style="display:none;">
+    <div class="cuadroSecundario"> 
+        <header>
+            <h1> reputation </h1>
+        </header>
+        <div class="cuadroInfo">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris ac justo vitae tortor interdum fermentum in in elit. 
+                Cras vel porta mi, eget porttitor magna. Sed hendrerit ornare viverra. 
+                Pellentesque accumsan, quam id egestas dictum, mauris arcu ultricies turpis, 
+                ac ornare odio justo volutpat velit. Cras lacus massa, accumsan sed risus at, 
+                faucibus lacinia leo. Suspendisse potenti. Vivamus massa felis, laoreet nec mauris a
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+
+                <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris ac justo vitae tortor interdum fermentum in in elit. 
+                Cras vel porta mi, eget porttitor magna. Sed hendrerit ornare viverra. 
+                Pellentesque accumsan, quam id egestas dictum, mauris arcu ultricies turpis, 
+                ac ornare odio justo volutpat velit. Cras lacus massa, accumsan sed risus at, 
+                faucibus lacinia leo. Suspendisse potenti. Vivamus massa felis, laoreet nec mauris a
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+
+            </p>
+            <img src="https://i.scdn.co/image/ab67616d0000b273da5d5aeeabacacc1263c0f4b" alt="">
+        </div>
+        <div class="equis" onclick="volver('Reputation')"> Volver </div>
+    </div>
+</div>
+
+<div id="infoLover" style="display:none;">
+    <div class="cuadroSecundario"> 
+        <header>
+            <h1> Lover </h1>
+        </header>
+        <div class="cuadroInfo">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris ac justo vitae tortor interdum fermentum in in elit. 
+                Cras vel porta mi, eget porttitor magna. Sed hendrerit ornare viverra. 
+                Pellentesque accumsan, quam id egestas dictum, mauris arcu ultricies turpis, 
+                ac ornare odio justo volutpat velit. Cras lacus massa, accumsan sed risus at, 
+                faucibus lacinia leo. Suspendisse potenti. Vivamus massa felis, laoreet nec mauris a
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+
+                <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris ac justo vitae tortor interdum fermentum in in elit. 
+                Cras vel porta mi, eget porttitor magna. Sed hendrerit ornare viverra. 
+                Pellentesque accumsan, quam id egestas dictum, mauris arcu ultricies turpis, 
+                ac ornare odio justo volutpat velit. Cras lacus massa, accumsan sed risus at, 
+                faucibus lacinia leo. Suspendisse potenti. Vivamus massa felis, laoreet nec mauris a
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+
+            </p>
+            <img src="https://i.scdn.co/image/ab67616d0000b273e787cffec20aa2a396a61647" alt="">
+        </div>
+        <div class="equis" onclick="volver('Lover')"> Volver </div>
+    </div>
+</div>
+
+<div id="infoFolklore" style="display:none;">
+    <div class="cuadroSecundario"> 
+        <header>
+            <h1> folklore </h1>
+        </header>
+        <div class="cuadroInfo">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris ac justo vitae tortor interdum fermentum in in elit. 
+                Cras vel porta mi, eget porttitor magna. Sed hendrerit ornare viverra. 
+                Pellentesque accumsan, quam id egestas dictum, mauris arcu ultricies turpis, 
+                ac ornare odio justo volutpat velit. Cras lacus massa, accumsan sed risus at, 
+                faucibus lacinia leo. Suspendisse potenti. Vivamus massa felis, laoreet nec mauris a
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+
+                <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris ac justo vitae tortor interdum fermentum in in elit. 
+                Cras vel porta mi, eget porttitor magna. Sed hendrerit ornare viverra. 
+                Pellentesque accumsan, quam id egestas dictum, mauris arcu ultricies turpis, 
+                ac ornare odio justo volutpat velit. Cras lacus massa, accumsan sed risus at, 
+                faucibus lacinia leo. Suspendisse potenti. Vivamus massa felis, laoreet nec mauris a
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+
+            </p>
+            <img src="https://i.scdn.co/image/ab67616d0000b27395f754318336a07e85ec59bc" alt="">
+        </div>
+        <div class="equis" onclick="volver('Folklore')"> Volver </div>
+    </div>
+</div>
+
+<div id="infoEvermore" style="display:none;">
+    <div class="cuadroSecundario"> 
+        <header>
+            <h1> evermore </h1>
+        </header>
+        <div class="cuadroInfo">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris ac justo vitae tortor interdum fermentum in in elit. 
+                Cras vel porta mi, eget porttitor magna. Sed hendrerit ornare viverra. 
+                Pellentesque accumsan, quam id egestas dictum, mauris arcu ultricies turpis, 
+                ac ornare odio justo volutpat velit. Cras lacus massa, accumsan sed risus at, 
+                faucibus lacinia leo. Suspendisse potenti. Vivamus massa felis, laoreet nec mauris a
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+
+                <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris ac justo vitae tortor interdum fermentum in in elit. 
+                Cras vel porta mi, eget porttitor magna. Sed hendrerit ornare viverra. 
+                Pellentesque accumsan, quam id egestas dictum, mauris arcu ultricies turpis, 
+                ac ornare odio justo volutpat velit. Cras lacus massa, accumsan sed risus at, 
+                faucibus lacinia leo. Suspendisse potenti. Vivamus massa felis, laoreet nec mauris a
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+
+            </p>
+            <img src="https://i.scdn.co/image/ab67616d0000b27333b8541201f1ef38941024be" alt="">
+        </div>
+        <div class="equis" onclick="volver('Evermore')"> Volver </div>
+    </div>
+</div>
+
+<div id="infoMidnights" style="display:none;">
+    <div class="cuadroSecundario"> 
+        <header>
+            <h1> Midnights </h1>
+        </header>
+        <div class="cuadroInfo">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris ac justo vitae tortor interdum fermentum in in elit. 
+                Cras vel porta mi, eget porttitor magna. Sed hendrerit ornare viverra. 
+                Pellentesque accumsan, quam id egestas dictum, mauris arcu ultricies turpis, 
+                ac ornare odio justo volutpat velit. Cras lacus massa, accumsan sed risus at, 
+                faucibus lacinia leo. Suspendisse potenti. Vivamus massa felis, laoreet nec mauris a
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+
+                <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris ac justo vitae tortor interdum fermentum in in elit. 
+                Cras vel porta mi, eget porttitor magna. Sed hendrerit ornare viverra. 
+                Pellentesque accumsan, quam id egestas dictum, mauris arcu ultricies turpis, 
+                ac ornare odio justo volutpat velit. Cras lacus massa, accumsan sed risus at, 
+                faucibus lacinia leo. Suspendisse potenti. Vivamus massa felis, laoreet nec mauris a
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+
+            </p>
+            <img src="https://i.scdn.co/image/ab67616d0000b273427ee2ecbd5e20c63e88c9d2" alt="">
+        </div>
+        <div class="equis" onclick="volver('Midnights')"> Volver </div>
+    </div>
+</div>
+
+<div id="infoTTPD" style="display:none;">
+    <div class="cuadroSecundario"> 
+        <header>
+            <h1> The Tortured Poets Department </h1>
+        </header>
+        <div class="cuadroInfo">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris ac justo vitae tortor interdum fermentum in in elit. 
+                Cras vel porta mi, eget porttitor magna. Sed hendrerit ornare viverra. 
+                Pellentesque accumsan, quam id egestas dictum, mauris arcu ultricies turpis, 
+                ac ornare odio justo volutpat velit. Cras lacus massa, accumsan sed risus at, 
+                faucibus lacinia leo. Suspendisse potenti. Vivamus massa felis, laoreet nec mauris a
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+
+                <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris ac justo vitae tortor interdum fermentum in in elit. 
+                Cras vel porta mi, eget porttitor magna. Sed hendrerit ornare viverra. 
+                Pellentesque accumsan, quam id egestas dictum, mauris arcu ultricies turpis, 
+                ac ornare odio justo volutpat velit. Cras lacus massa, accumsan sed risus at, 
+                faucibus lacinia leo. Suspendisse potenti. Vivamus massa felis, laoreet nec mauris a
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.                                            
+            </p>
+            <img src="https://pbs.twimg.com/media/GFij0VvWQAALCNy?format=jpg&name=small" alt="">
+        </div>
+        <div class="equis" onclick="volver('TTPD')"> Volver </div>
+    </div>
+</div>
+
 
 
     

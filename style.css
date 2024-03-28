@@ -6,12 +6,6 @@
     box-sizing: border-box;
 }
 
-.antic-slab-regular {
-    font-family: "Antic Slab", serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-
 body {
     align-items: center;
     background-color: #edebe7;
@@ -19,6 +13,8 @@ body {
 
 footer {
     position: absolute;
+    font-family: "EB Garamon", sans-serif;
+    font-size: 15px;
     bottom: 0;
     width: 100vw;
     left: 0;
@@ -51,7 +47,52 @@ header {
     overflow: hidden;
     left: 15vw;
     top: 10vh;
+    bottom: 10vh;
 }
+
+.cuadroSecundario{
+    position: absolute;
+    /*Esta posicionado por su cuenta, no toma en consideracion al resto de elementos*/
+    background-color: #817c70;
+    box-shadow: 14px 13px 0px 2px rgba(0,0,0,0.61);
+    /* border: 5px solid #6b5b3a; ancho tipo color */
+    border-radius: 30px;
+    /* redondear */
+    padding: 3%;
+    /* margen interno */
+    display: flex; /* Los elementos se muestran de manera flexible*/
+    flex-direction: column; /* En una columna */
+    justify-content: center; /* Y centrados con respecto al elemento modificado*/
+    max-width: 70vw;
+    max-height: 90vh;
+    overflow: hidden;
+    left: 15vw;
+    top: 10vh;
+    bottom: 10vh;
+}
+
+.cuadroInfo {
+    display: flex;
+    align-items: center; /* esto hace que se centren el texto y la imagen */
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.cuadroInfo img{
+    width: 50vw;
+    height: 50vh;
+    max-width: 100%; /* La imagen no debe exceder el ancho del contenedor */
+}
+
+.cuadroInfo p{
+    margin-top: 0%;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    text-align: justify;
+}
+
+
 
 .albumTitle{
     text-align: center;
@@ -66,18 +107,25 @@ header {
     width: 100%;
 }
 
-img{
+.equis{
+    cursor: pointer;
+}
+
+#imagen{
     width: 100%;
     transform: scale(1,1);
     transition-timing-function: ease-out;
     transition-duration: 250ms;
+    cursor: pointer;
 }
 
-img:hover{
+#imagen:hover{
     transform: scale(1.08,1.08);
     transition-timing-function: ease-out;
     transition-duration: 100ms;
 }
+
+
 
 #titulo {
     text-align: center;

@@ -1,18 +1,20 @@
-const randomText = [
-    "Welcum",
-    "adict",
-    "to",
-    "your",
-    "page",
-    "AAAAAAAAAAAAAAAA",
-];
+function mostrarInfo(album) {
+    var mainSquare = document.getElementsByClassName('cuadroPrincipal')[0];
+    mainSquare.style.display = 'none'; // Usar = para asignar 'none'
 
-const welcomeText = document.getElementById("welcomeText");
+    var infoDiv = document.getElementById('info' + album);
+    if (infoDiv.style.display === 'none') {
+        infoDiv.style.display = 'block';
+    } else {
+        infoDiv.style.display = 'none';
+    }
+}
 
-setInterval(() => {
-    welcomeText.innerHTML = getRandomText();
-}, 3000);
-
-function getRandomText() {
-    return randomText[Math.floor(Math.random() * randomText.length)];
+function volver(album){
+    /*vuelve al cuadro principañl*/
+    var mainSquare = document.getElementsByClassName('cuadroPrincipal')[0];
+    mainSquare.style.display = 'block'; 
+    /* oculta la info */
+    var infoDiv = document.getElementById('info' + album);
+    infoDiv.style.display = 'none';
 }
